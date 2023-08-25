@@ -29,25 +29,14 @@
     }
 
     .console-title {
-      font-size: 36px;
+      font-size: 40px;
       margin-bottom: 15px;
       color: #27ae60;
     }
 
     .console-text {
       margin-bottom: 20px;
-      line-height: 1.5;
-    }
-
-    .input-field {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border: none;
-      border-radius: 5px;
-      background-color: rgba(44, 62, 80, 0.8);
-      color: #ecf0f1;
-      outline: none;
+      line-height: 1.6;
     }
 
     .action-button {
@@ -55,10 +44,13 @@
       color: #ecf0f1;
       border: none;
       border-radius: 5px;
-      padding: 10px 20px;
+      padding: 12px 25px;
       font-size: 16px;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: bold;
     }
 
     .action-button:hover {
@@ -75,6 +67,20 @@
       color: #3498db;
       text-decoration: none;
     }
+
+    /* Additional styling for a more polished look */
+    .content-container {
+      text-align: center;
+    }
+
+    .console-box {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .action-button {
+      margin-top: 20px;
+    }
   </style>
 </head>
 
@@ -82,8 +88,11 @@
   <div class="content-container">
     <div class="console-box">
       <h1 class="console-title">Unblocked Cave</h1>
-      <p class="console-text">Work in progress unblocked games website!</p>
+      <p class="console-text">Discover and play unblocked games anytime!</p>
       <a href="aboutblank.html" class="action-button">about:blank embedder</a>
+    </div>
+    <p class="credit-text">Made with ❤️ by <a href="https://github.com/misterfonka" class="website-link">misterfonka</a></p>
+  </div>
 </body>
 
 </html>
