@@ -86,24 +86,26 @@
       <button class="action-button" id="create">Create page</button>
       <button class="action-button" onclick="alert('If you are curious about what this is, basically it is a tool used to prevent our teachers from looking at our screen. At my school, our teachers use a tool called Dyknow that allows our teachers to view our screens so they can catch us playing games and such. But, if you embed a website inside of the about:blank URL, Dyknow can not tell our teacher what we are on because it is a system page!');">
         What is this?
-    </button>
-  <!-- credits to 3kho for this part -->
-  <script>
-    var url = document.getElementById("url-target");
-    document.getElementById("create").addEventListener("click", function () {
-      var win = window.open();
-      win.document.body.style.margin = "0";
-      win.document.body.style.height = "100vh";
-      var iframe = win.document.createElement("iframe");
-      iframe.style.border = "none";
-      iframe.style.width = "100%";
-      iframe.style.height = "100%";
-      iframe.style.margin = "0";
-      iframe.referrerpolicy = "no-referrer";
-      iframe.allow = "fullscreen";
-      iframe.src = url.value;
-      win.document.body.appendChild(iframe);
-    });
-  </script>
+      </button>
+    </div>
+    <!-- credits to 3kho for this part -->
+    <script>
+      var url = document.getElementById("url-target");
+      document.getElementById("create").addEventListener("click", function () {
+        var win = window.open();
+        win.document.body.style.margin = "0";
+        win.document.body.style.height = "100vh";
+        var iframe = win.document.createElement("iframe");
+        iframe.style.border = "none";
+        iframe.style.width = "100%";
+        iframe.style.height = "100%";
+        iframe.style.margin = "0";
+        iframe.referrerpolicy = "no-referrer";
+        iframe.allow = "fullscreen";
+        iframe.src = url.value;
+        win.document.body.appendChild(iframe);
+      });
+    </script>
+  </div>
 </body>
 </html>
