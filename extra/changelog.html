@@ -35,15 +35,69 @@
             a:hover {
                 text-decoration: underline;
             }
+            .navbar {
+                background-color: rgba(0, 0, 0, 0.7);
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px;
+                z-index: 1000;
+            }
+
+            .navbar-text {
+                font-size: 20px;
+                color: #ecf0f1;
+                margin: 0;
+            }
+
+            .navbar-links {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .navbar-links li {
+                display: inline;
+                margin-right: 10px;
+            }
+
+            .navbar-links a {
+                font-size: 18px;
+                color: #ecf0f1;
+                text-decoration: none;
+                padding: 10px 20px;
+                margin: 0 10px;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+
+            .navbar-links a:hover {
+                background-color: #219d50;
+            }
         </style>
     </head>
     <body>
+        <div class="navbar">
+            <p class="navbar-text">UC/Unblocked Cave</p>
+            <ul class="navbar-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/games/games.html">Games</a></li>
+                <li><a href="/proxy/proxy.html">Proxy</a></li>
+                <li><a href="/emulator/emulator.html">Emulator</a></li>
+                <li><a href="/extra/extra.html">Extra</a></li>
+            </ul>
+        </div>
         <div class="container">
             <ul>
+                <li>October 12, 2023: Added a cool navbar, also added a extra page.</li>
                 <li>October 12, 2023: Added more games, made the Github README.md pretty, also deleted the exploit guide because TN is working on one.</li>
                 <li>October 3, 2023: Merged a pull request from kxtzownsu that just does some minor changes to the jailbreak guide.</li>
                 <li>September 25, 2023: Added the new exploit INSECURLY.</li>
-                <li>September 25, 2023:  Added YoHoHo.io and a notice.
+                <li>September 25, 2023: Added YoHoHo.io and a notice.</li>
                 <li>September 13, 2023: Did some minor changes, also added Kitchen Gun and Bitlife.</li>
                 <li>September 9, 2023: Added a shit ton of games, I am going to add more and fix some stuff but I am just making this commit because I am reinstalling Linux</li>
                 <li>September 8, 2023: Added a suggestion form.</li>
