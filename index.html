@@ -125,10 +125,76 @@
             .navbar-links a:hover {
                 background-color: #219d50;
             }
+
+            #message-container {
+                display: none; /* Set to "none" initially to hide the message */
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.7); /* Darkened background */
+                color: #ffffff;
+                text-align: center;
+                font-size: 20px;
+                z-index: 9999; /* Ensure the message is on top */
+            }
+
+            #message-box {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 20px;
+                background: #3498db;
+                border-radius: 10px;
+            }
         </style>
     </head>
 
     <body>
+        <div id="message-container">
+            <div id="message-box">
+                <p>Hello! We have a new alternate website that isn't blocked. Here is the link:</p>
+                <a href="https://crisisapple89.github.io" target="_blank">https://crisisapple89.github.io</a>
+                <p>- Liam/misterfonka</p>
+                <br />
+                <label> <input type="checkbox" id="hide-message" /> Don't show this message again </label>
+                <br />
+                <button id="close-message">Close</button>
+            </div>
+        </div>
+
+        <script>
+            // JavaScript to handle the message box
+            document.addEventListener("DOMContentLoaded", function () {
+                const messageContainer = document.getElementById("message-container");
+                const closeButton = document.getElementById("close-message");
+                const hideMessageCheckbox = document.getElementById("hide-message");
+
+                // Check if the user has chosen to hide the message
+                if (localStorage.getItem("hideMessage") === "true") {
+                    messageContainer.style.display = "none";
+                }
+
+                closeButton.addEventListener("click", function () {
+                    messageContainer.style.display = "none";
+
+                    // Save the user's choice
+                    if (hideMessageCheckbox.checked) {
+                        localStorage.setItem("hideMessage", "true");
+                    } else {
+                        localStorage.removeItem("hideMessage"); // Remove the entry
+                    }
+                });
+
+                // Check if the initial state is set to hide the message
+                if (localStorage.getItem("hideMessage") === "true") {
+                    messageContainer.style.display = "none";
+                }
+            });
+        </script>
+
         <div class="navbar">
             <p class="navbar-text">UC/Unblocked Cave</p>
             <ul class="navbar-links">
@@ -153,7 +219,8 @@
             <p class="credit-text">
                 If you have a suggestion for the website, fill out this form <a href="https://docs.google.com/forms/e/1FAIpQLSeB0xdM_4hT-anPLHE9-gx-yjWe7SmC2z5q08WRwBuyCkmjVA/viewform?fbzx=1194842068083951310">here.</a>
                 <br />
-                 <a href='http://www.freevisitorcounters.com'>See amount of people online:</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=2c5f3a5a9ad7c8300bb4b4e2d62cda0b35cd7d59'></script>
+                <a href="http://www.freevisitorcounters.com">See amount of people online:</a>
+                <script type="text/javascript" src="https://www.freevisitorcounters.com/auth.php?id=2c5f3a5a9ad7c8300bb4b4e2d62cda0b35cd7d59"></script>
                 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1070522/t/8"></script>
             </p>
         </div>
