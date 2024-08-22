@@ -1,7 +1,8 @@
 <div align="center">
     <h1>Unblocked Cave</h1><br>
     Discover and play unblocked games anytime!<br>
-    (UNMAINTAINED! Working on a version two...)<br><br>
+    (UNMAINTAINED! Working on a version two...)<br>
+    Thank you guys so much for 50,000 visitors ❤️<br><br>
     <img src="https://img.shields.io/github/stars/misterfonka/misterfonka.github.io" alt="GitHub stars">
     <img src="https://img.shields.io/github/issues-pr/misterfonka/misterfonka.github.io" alt="GitHub pull requests">
     <img src="https://img.shields.io/github/issues/misterfonka/misterfonka.github.io" alt="GitHub issues">
